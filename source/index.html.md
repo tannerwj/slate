@@ -20,7 +20,7 @@ Welcome to the Cybermatics documentation page. In the real world, companies use 
 This documentation is organized into days, with specific terminology associated with those days. If you're having trouble during a specific day's tasks, reference this documentation by visiting the day's task terminology and consulting with it. Below, we'll start out my introducing some common terms you should know:
 
 ## Cybersecurity
-Cybersecurity is a field study that deals with internet security. All over the world, people and devices are connected to the internet. At the same time, people with bad intentions attempt to gain control of these devices or steal information from these people. The aim of cybersecurity is to make the web a a safe space and prevent these malicious individuals from getting past the internet's defenses.
+Cybersecurity is a field study that deals with internet security. All over the world, people and devices are connected to the internet. At the same time, people with bad intentions attempt to gain control of these devices or steal information from these people. The aim of cybersecurity is to make the web a safe space and prevent these malicious individuals from getting past the internet's defenses.
 ## Penetration Test
 A penetration test is a practice that is conducted by having cybersecurity professionals attack a computer, network, or website in order to determine whether or not the defenses put in place will successfully repel against hackers.
 ## Ethics
@@ -97,6 +97,7 @@ SELECT * FROM Customers;
 
 ## Database
 
+> This query shows us the names of the databases:
 
 
 ```sql
@@ -190,6 +191,7 @@ The variables are `$user` and `$pass`. For $user I provide `admin`, for $pass I 
 The `#` is a character most databases will recognize as the beginning of a comment, so I use it here to comment out whatever other SQL code is after the `$pass` variable. I can then run my own query after the original query is complete.
 
 For example, if I want to get the SQL version, I would use `$user = 'whatever'`, `$pass = 'pass UNION SELECT @@version,2,3;#'`
+For example, if I want to get the SQL version, I would use `$user = 'whatever'`, `$pass = "pass ' UNION SELECT @@version,2,3;#"`
 
 Don't worry about the `UNION SELECT` too much, it simply allows us to combine select statements with another data set with the same amount of columns.
 
