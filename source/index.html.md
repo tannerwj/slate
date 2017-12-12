@@ -190,7 +190,6 @@ The variables are `$user` and `$pass`. For $user I provide `admin`, for $pass I 
 
 The `#` is a character most databases will recognize as the beginning of a comment, so I use it here to comment out whatever other SQL code is after the `$pass` variable. I can then run my own query after the original query is complete.
 
-For example, if I want to get the SQL version, I would use `$user = 'whatever'`, `$pass = 'pass UNION SELECT @@version,2,3;#'`
 For example, if I want to get the SQL version, I would use `$user = 'whatever'`, `$pass = "pass ' UNION SELECT @@version,2,3;#"`
 
 Don't worry about the `UNION SELECT` too much, it simply allows us to combine select statements with another data set with the same amount of columns.
